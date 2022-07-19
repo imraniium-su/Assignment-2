@@ -1,0 +1,196 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    width: 1350px;
+    display: contents;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* header  */
+.header-1 {
+    width: 1322px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 10px 30px 10px;
+    border-radius: 30px;
+}
+
+.orange {
+    color: orange;
+}
+
+.show {
+    margin-top: 161px;
+    margin-left: 246px;
+    width: 531px;
+    height: 424px;
+
+}
+
+.show h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.player {
+    width: 581px;
+    height: 613px;
+    margin-left: 70px;
+    margin-top: 83px;
+    padding-right: 79px;
+
+}
+
+.player img {
+    width: 581px;
+    height: 613px;
+}
+
+.link-button {
+    text-decoration: none;
+    background-color: orangered;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 10px;
+
+}
+
+/* body  */
+
+.continer {
+    width: 1320px;
+    display: flex;
+    margin: 60px;
+}
+
+/* sidenav  */
+.nav {
+    width: 312px;
+    background-color: black;
+    height: 312px;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 25px 25px 0px 0px;
+}
+
+
+.side-nav li {
+    margin-bottom: 20px;
+    width: 252px;
+
+}
+
+.side-nav a {
+    display: block;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: black;
+    font-weight: 700;
+    width: 252px;
+    height: 46px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 10px;
+
+}
+
+#color {
+    background-color: orangered;
+    color: white
+}
+
+
+/* club match  */
+.matchs {
+    width: 978px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.match {
+    height: 362px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+}
+
+.match img {
+    width: 100%;
+
+}
+
+.match-1 {
+    padding: 20px 20px;
+}
+
+.match span {
+    margin: 0 15px;
+}
+
+.fa-clock {
+    color: rgb(43, 38, 38);
+    font-size: 20px;
+}
+
+.fa-message {
+    color: rgb(44, 40, 40);
+    font-size: 20px;
+}
+
+/* footer  */
+footer {
+    background-color: black;
+    height: 400px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h2 {
+    color: white;
+}
+
+hr {
+    color: #FFFFFF;
+    width: 1320px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #B9B9B9;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+
+.fa-globe,
+.fa-twitter,
+.fa-youtube,
+.fa-instagram {
+    color: white;
+    margin: 10px 20px 0 0;
+    margin-right: 25px;
+    font-size: 30px;
+    padding-top: 30px;
+}
