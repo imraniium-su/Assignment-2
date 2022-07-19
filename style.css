@@ -157,10 +157,12 @@ main {
 footer {
     background-color: black;
     height: 400px;
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 footer h2 {
