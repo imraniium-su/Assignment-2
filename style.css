@@ -96,6 +96,11 @@ main {
     padding: 25px 25px 0px 0px;
 }
 
+.nav ul {
+    list-style-type: none;
+
+}
+
 .nav a {
     display: block;
     text-decoration: none;
@@ -251,6 +256,10 @@ hr {
         margin: auto;
     }
 
+    .player {
+        margin-top: 250px;
+    }
+
     .player img {
         justify-content: center;
         flex-direction: column;
@@ -266,13 +275,24 @@ hr {
         width: 100%;
     }
 
-
-
-    .side-nav {
-        flex-direction: column;
+    .nav {
         justify-content: center;
-        margin: auto;
+        flex-direction: column;
+        background-color: white;
+
     }
+
+    .nav ul {
+        margin-left: 30px;
+
+    }
+
+    .nav a {
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid gray;
+    }
+
 
     .matchs {
         grid-template-columns: repeat(1, 1fr);
@@ -295,8 +315,10 @@ hr {
     }
 }
 
+/* resposive ipad */
 @media only screen and (min-width: 620px) and (max-width: 1040px) {
     .header-1 {
+        display: flex;
         width: 100%;
         flex-direction: column;
         justify-content: center;
@@ -325,12 +347,27 @@ hr {
         width: 100%;
     }
 
-
-
-    .side-nav {
-        flex-direction: column;
+    .nav {
         justify-content: center;
-        margin: auto;
+        flex-direction: column;
+        background-color: white;
+
+    }
+
+    .nav ul {
+        display: flex;
+        padding: 0;
+        text-align: center;
+        margin-left: 80px;
+
+    }
+
+    .nav a {
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid gray;
+        width: 200px;
+        margin-right: 10px;
     }
 
     .matchs {
