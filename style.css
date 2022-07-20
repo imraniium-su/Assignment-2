@@ -1,7 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
-    width: 1350px;
     display: contents;
 
 }
@@ -15,12 +14,18 @@ main {
 
 /* header  */
 .header-1 {
-    width: 1322px;
     background-color: black;
     display: flex;
     justify-content: space-around;
-    margin: 30px 10px 30px 10px;
+    margin: 30px;
     border-radius: 30px;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+.header-1:hover {
+    transform: rotate(360deg);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
 }
 
 .orange {
@@ -30,7 +35,7 @@ main {
 .show {
     margin-top: 161px;
     margin-left: 246px;
-    width: 531px;
+    width: 50%;
     height: 424px;
 
 }
@@ -41,7 +46,7 @@ main {
 }
 
 .player {
-    width: 581px;
+    width: 50%;
     height: 613px;
     margin-left: 70px;
     margin-top: 83px;
@@ -50,7 +55,7 @@ main {
 }
 
 .player img {
-    width: 581px;
+    width: 100%;
     height: 613px;
 }
 
@@ -70,17 +75,16 @@ main {
 /* body  */
 
 .continer {
-    width: 1320px;
     display: flex;
     margin: 60px;
+    justify-content: space-around;
 }
 
 /* sidenav  */
 .nav {
-    width: 312px;
+    max-width: 25%;
     background-color: black;
-    height: 312px;
-    margin-top: 20px;
+    max-height: 312px;
     border-radius: 15px;
     padding: 25px 25px 0px 0px;
 }
@@ -114,7 +118,7 @@ main {
 
 /* club match  */
 .matchs {
-    width: 978px;
+    width: 75%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
@@ -124,10 +128,11 @@ main {
 }
 
 .match {
-    height: 362px;
+    height: auto;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid gainsboro;
+    box-shadow: 5px 5px 10px gray;
+
 }
 
 .match img {
@@ -141,6 +146,37 @@ main {
 
 .match span {
     margin: 0 15px;
+}
+
+/* upcoming match  */
+.match-up {
+    height: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 40px 20px;
+
+
+}
+
+.imge {
+    display: flex;
+    justify-content: center;
+}
+
+.imge span {
+    margin: 20px;
+}
+
+
+.match-up span {
+    text-align: center;
+
+}
+
+.match-up h3,
+p {
+    text-align: center;
 }
 
 .fa-clock {
@@ -196,3 +232,5 @@ hr {
     font-size: 30px;
     padding-top: 30px;
 }
+
+/* reponsive phone */
