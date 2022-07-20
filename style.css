@@ -19,13 +19,12 @@ main {
     justify-content: space-around;
     margin: 30px;
     border-radius: 30px;
-    transition: width 0.5s, height 0.5s, transform 0.5s;
 }
 
 .header-1:hover {
+    transition: transform 0.5s;
     transform: rotate(360deg);
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+    background-color: rgb(57, 145, 115);
 }
 
 .orange {
@@ -33,8 +32,10 @@ main {
 }
 
 .show {
-    margin-top: 161px;
-    margin-left: 246px;
+    display: block;
+    margin: 161px 10px 10px 246px;
+    padding: 10px;
+
     width: 50%;
     height: 424px;
 
@@ -42,6 +43,10 @@ main {
 
 .show h1 {
     font-size: 3em;
+    color: white;
+}
+
+.show p {
     color: white;
 }
 
@@ -82,6 +87,8 @@ main {
 
 /* sidenav  */
 .nav {
+    display: flex;
+    justify-content: center;
     max-width: 25%;
     background-color: black;
     max-height: 312px;
@@ -89,14 +96,7 @@ main {
     padding: 25px 25px 0px 0px;
 }
 
-
-.side-nav li {
-    margin-bottom: 20px;
-    width: 252px;
-
-}
-
-.side-nav a {
+.nav a {
     display: block;
     text-decoration: none;
     background-color: #FFFFFF;
@@ -107,6 +107,7 @@ main {
     text-align: center;
     padding-top: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
 
 }
 
@@ -234,3 +235,124 @@ hr {
 }
 
 /* reponsive phone */
+@media only screen and (max-width:620px) {
+
+    .header-1 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .show {
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .player img {
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+
+    .continer {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+
+
+    .side-nav {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .matchs {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    footer {
+        width: 100%;
+    }
+
+
+
+    .links {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 620px) and (max-width: 1040px) {
+    .header-1 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .show {
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .player img {
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+
+    .continer {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+
+
+
+    .side-nav {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .matchs {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    footer {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+
+    .links {
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+}
