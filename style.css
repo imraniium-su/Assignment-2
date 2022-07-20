@@ -381,15 +381,17 @@ hr {
 
     footer {
         justify-content: center;
-        flex-direction: column;
-        width: 100%;
+
+    }
+
+    footer .hr {
+        justify-content: center;
     }
 
 
 
-    .links {
-        justify-content: center;
-        flex-direction: column;
-        margin: auto;
+    .links a {
+        align-items: center;
+        flex-direction: row;
     }
 }
