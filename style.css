@@ -199,10 +199,9 @@ p {
 footer {
     background-color: black;
     height: 400px;
-    padding-top: 20px;
+    padding-top: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     margin-top: 20px;
 }
@@ -253,11 +252,21 @@ hr {
     .show {
         justify-content: center;
         flex-direction: column;
-        margin: auto;
+        height: fit-content;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 10px;
+        width: 100%;
+        padding: 0 20px;
     }
 
-    .player {
-        margin-top: 250px;
+    .show p {
+        text-align: center;
+        padding-right: 35px;
+    }
+
+    .show a {
+        padding-left: 60px;
     }
 
     .player img {
@@ -318,23 +327,22 @@ hr {
 /* resposive ipad */
 @media only screen and (min-width: 620px) and (max-width: 1040px) {
     .header-1 {
-        display: flex;
+
         width: 100%;
-        flex-direction: column;
-        justify-content: center;
         margin: auto;
+
+
 
     }
 
     .show {
-        justify-content: center;
-        flex-direction: column;
-        margin: auto;
+        height: fit-content;
+        margin-top: 50px;
+        margin-left: 50px;
     }
 
     .player img {
         justify-content: center;
-        flex-direction: column;
         margin: auto;
         width: 100%;
     }
