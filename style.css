@@ -206,7 +206,7 @@ footer {
     margin-top: 20px;
 }
 
-footer h2 {
+footer h1 {
     color: white;
 }
 
@@ -215,8 +215,17 @@ hr {
     width: 1320px;
 }
 
-.links {
-    margin-top: 20px;
+footer ul {
+    display: flex;
+    padding-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    flex-direction: column;
+    color: #B9B9B9;
+    margin-right: 20px;
+
 }
 
 .links a {
@@ -224,6 +233,10 @@ hr {
     color: #B9B9B9;
     margin-right: 20px;
     padding-top: 20px;
+}
+
+.foot-2 {
+    display: flex;
 }
 
 
@@ -316,6 +329,10 @@ hr {
         width: 100%;
     }
 
+    footer ul {
+        display: block;
+    }
+
 
 
     .links {
@@ -396,10 +413,11 @@ hr {
         justify-content: center;
     }
 
-
-
-    .links a {
-        align-items: center;
-        flex-direction: row;
+    footer ul {
+        padding-top: 20px;
+        width: 100%;
     }
+
+
+
 }
