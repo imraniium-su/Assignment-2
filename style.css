@@ -333,12 +333,11 @@ footer a {
         display: block;
     }
 
-
-
-    .links {
-        align-items: center;
-        flex-direction: row;
+    footer a {
+        color: #B9B9B9;
     }
+
+
 }
 
 /* resposive ipad */
@@ -418,6 +417,8 @@ footer a {
         width: 100%;
     }
 
-
+    footer a {
+        color: #B9B9B9;
+    }
 
 }
